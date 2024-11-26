@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginSenha" placeholder="Senha" required>
+            <div class="form-buttons">
+                <button type="submit">Entrar</button>
+                <button type="button" id="cancelarLogin">Cancelar</button>
+            </div>
+        </form>
+        <div class="toggle">Não tem conta? <a href="#" id="irParaCadastro">Cadastre-se</a></div>
+    </div>
+
+    <div class="container" id="cadastroContainer" style="display: none;">
+        <h2>Cadastro</h2>
+        <form id="cadastroForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="number" id="idade" placeholder="Idade (1-18)" min="1" max="18" required>
+            <input type="email" id="cadastroEmail" placeholder="Email" required>
+            <input type="password" id="cadastroSenha" placeholder="Senha" required>
+            <div class="form-buttons">
+                <button type="submit">Cadastrar</button>
+                <button type="button" id="cancelarCadastro">Cancelar</button>
+            </div>
+        </form>
+        <div class="toggle">Já tem conta? <a href="#" id="irParaLogin">Fazer Login</a></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
